@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(52, 97, 99);
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .container,
+        .container2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .boxes {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid white;
+            text-align: center;
+            padding: 20px;
+            width: 160px;
+            height: 250px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        button {
+            border: 1px solid white;
+            padding: 10px 20px;
+            border-radius: 7px;
+            background-color: transparent;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .hidden-content {
+            width: 600px;
+            height: 210px;
+            text-align: justify;
+            display: none;
+        }
+
+        .hidden-content.reveal-btn {
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 id="main-heading">Event Listeners</h1>
+
+    <div class="container">
+        <div class="boxes box-1">
+            <h1 id="heading">Example 1</h1>
+            <button class="btn-1" onclick="alert('I love Javasscript')">Enter</button>
+        </div>
+        <div class="boxes box-2">
+            <h1 id="heading">Example 2</h1>
+            <button class="btn-2">Enter</button>
+        </div>
+        <div class="boxes box-3">
+            <h1 id="heading">Example 3</h1>
+            <button class="btn-3">Enter</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container2">
+        <button class="reveal-btn boxes">Reveal More</button>
+        <div class="hidden-content boxes">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil hic necessitatibus dolor animi error sequi corrupti laudantium repudiandae officiis cumque odit aliquam labore modi, ipsa debitis laboriosam reprehenderit nulla ratione quaerat nemo eligendi unde aperiam! Voluptates inventore natus atque placeat, nisi similique. Esse assumenda, officia laborum similique mollitia iste aspernatur ad sequi perspiciatis tempore minus, asperiores consectetur? Fuga, maxime iusto deleniti maiores quo praesentium voluptate ipsum delectus officia similique illo ex illum quae repellendus, atque in? Perferendis quod, illum quas ducimus provident hic assumenda dolorem commodi ut nostrum similique ipsum maxime, repudiandae esse modi neque consequatur et, ex quisquam aut.
+        </div>
+    </div>
+
+    <section>
+
+    </section>
+   <script src="event_listener.js"></script>
+</body>
+</html>
